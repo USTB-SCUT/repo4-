@@ -1,0 +1,35 @@
+name: Update README with file count
+
+on:
+  push:
+    branches:
+      - main  # 你可以将 main 替换为你使用的默认分支名
+  schedule:
+    - cron: '0 0 * * *'  # 每天更新一次，或根据需要自定义时间
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Count files in doc folder
+        id: count_files
+        run: |
+          count=$(find doc -type f | wc -l)
+          echo "file_count=$count" >> $GITHUB_ENV
+
+      - name: Update README with file count
+        run: |
+          # 获取当前 README 中的文件数量行并替换
+          sed -i '/<!-- FILE_COUNT -->/c\There are currently **'$file_count'** files in the doc folder.' README.md
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update file count in README"
+          git push
