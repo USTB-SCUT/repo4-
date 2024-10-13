@@ -4,7 +4,7 @@
 
 ## 使用规则
 - 在doc文件夹中创建.md/.txt等格式的文件，
-- 文件命名规范为"文件标号<-Username><-心情><-备注>"，其中文件标号为 **N** <!-- FILE_COUNT --> ，"<>"中的为可选命名参数
+There are currently **1** files in the doc folder.
 
 ## 鸣谢
 
