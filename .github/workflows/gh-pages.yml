@@ -21,7 +21,7 @@ jobs:
           mdbook-version: 'latest'
 
       - run: mdbook build
-        working-directory: ./repo4scirec/book
+        working-directory: book
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
