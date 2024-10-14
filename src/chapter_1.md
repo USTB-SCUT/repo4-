@@ -9,7 +9,9 @@
 - SCUT我的最优秀的同班之一仓库整理的课程考试资料仓库：[SCUT_CS_Courses_Review](https://github.com/Fangziyang0910/SCUT_CS_Courses_Review.git);
 
 ## 
-##
+# 考试
+## 
+- 这一部分的内容主要与各科的（笔试）考试相关。
 ### 计算方法
 - 难度：3.0★
 - 必考：牛顿迭代法、LU分解法、最小二乘法
