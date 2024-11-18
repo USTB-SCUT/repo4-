@@ -94,4 +94,4 @@
 </div>
 
 ## 
-**有任何问题可以在[Justjustifyjudge的个人主页](https://github.com/Justjustifyjudge/Justjustifyjudge.git)或者任何一个Justjustifyjudge能看见的地方提交issue，苯人能答尽答**
+**有任何问题或建议可以在[Justjustifyjudge的个人主页](https://github.com/Justjustifyjudge/Justjustifyjudge.git)或者任何一个Justjustifyjudge能看见的地方提交issue，苯人能答尽答**
